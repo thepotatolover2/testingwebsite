@@ -1,8 +1,14 @@
 <center><h1>Testing website!</h1>
-<label for="bar">Loading!</label>
-  <progress id="bar" value="50" max="100">
+<!--<label for="bar">Loading!</label>
+  <progress id="bar" value="50" max="100">-->
+    <div id="container"></div>
 
 
 
 
 </center>
+<script>
+  var ProgressBar = require('progressbar.js')
+  var bar = new ProgressBar.Line('#container', {easing: 'easeInOut'});
+  bar.animate(1);
+</script>
